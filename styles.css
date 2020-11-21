@@ -49,9 +49,5 @@ body{
     .description-main{
         width:90%;
     }
-    .description button {
-        width: 100px;
-        display:flex;
-    }
   }
   
