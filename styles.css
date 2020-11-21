@@ -44,7 +44,7 @@ body{
 
 @media only screen and (max-width: 600px) {
     .description {
-      width: 100%;
+      width: 95%;
     }
     .description-main{
         width:90%;
