@@ -30,7 +30,6 @@ body{
 
 .description button {
     margin-top: 10%;
-    margin-bottom: 5%;
     margin-right: 5%;
     width: 200px;
     padding: 10px;
@@ -49,5 +48,10 @@ body{
     }
     .description-main{
         width:90%;
+    }
+    .description button {
+        width: 100px;
+        display:flex;
+    }
   }
   
