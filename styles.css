@@ -127,6 +127,10 @@ li {
      display: block;
      margin-right: 5%;
    }
+   #mc-embedded-subscribe {
+       display: inline !important;
+       width: 30%;
+   }
    
    
 @media only screen and (max-width: 600px) {
@@ -175,6 +179,9 @@ li {
         height: 12vh;
         background-color: rgb(0, 0, 0);
       }
+      #mc-embedded-subscribe {
+        width: 50%;
+    }
       
   }
   
