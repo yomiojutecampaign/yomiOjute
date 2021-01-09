@@ -1,6 +1,7 @@
 const Menu = document.getElementById('menu')
 const info = document.getElementById('info')
 const volunteerInput = document.getElementById('mce-MMERGE8')
+const checkbox = document.querySelectorAll('input[type="checkbox"]')
 let openSide = false
 
 Menu.addEventListener('click',()=>{
@@ -20,27 +21,57 @@ Menu.addEventListener('click',()=>{
     
 })
 
-volunteerInput.addEventListener('change',()=>{
-    if(volunteerInput.value === 'Mobilization'){
-        info.innerHTML = `<p>
-       ${volunteerInput.value} - This involves reaching out to people through one-on-one strategy and other physical means.
-        </p>`
-    }else if(volunteerInput.value === 'Polling Unit Agent'){
-        info.innerHTML = `<p>
-       ${volunteerInput.value} - Help to man one of the 47 polling units in Ward D Bariga LCDA that's closest to your location..
-        </p>`
+// volunteerInput.addEventListener('change',()=>{
+//     if(volunteerInput.value === 'Mobilization'){
+//         info.innerHTML = `<p>
+//        ${volunteerInput.value} - This involves reaching out to people through one-on-one strategy and other physical means.
+//         </p>`
+//     }else if(volunteerInput.value === 'Polling Unit Agent'){
+//         info.innerHTML = `<p>
+//        ${volunteerInput.value} - Help to man one of the 47 polling units in Ward D Bariga LCDA that's closest to your location..
+//         </p>`
+//     }
+//     else if(volunteerInput.value === 'Graphic Design'){
+//         info.innerHTML = `<p>
+//        ${volunteerInput.value} - Help to design campaign materials for publicity and marketing...
+//         </p>`
+//     }else if(volunteerInput.value === 'Logistics'){
+//         info.innerHTML = `<p>
+//         ${volunteerInput.value} - Help to ensure campaign materials are disbursed or placed where they ought to be. Logistics team will be responsible for the general leg work..
+//          </p>`
+//     }else if(volunteerInput.value === 'Social Media'){
+//         info.innerHTML = `<p>
+//         ${volunteerInput.value} - This team will be responsible for online campaign by designing and executing a workable strategy...
+//          </p>`
+//     }
+// })
+
+Array.from(checkbox).forEach((check)=>{
+    check.addEventListener('change',()=>{
+        if(check.checked){
+          if(check.value === '1'){
+            info.innerHTML = `<p>
+           Mobilization - This involves reaching out to people through one-on-one strategy and other physical means.
+            </p>`
+        }else if(check.value === '8'){
+            info.innerHTML = `<p>
+           Polling Unit Agent - Help to man one of the 47 polling units in Ward D Bariga LCDA that's closest to your location..
+            </p>`
+        }
+        else if(check.value === '16'){
+            info.innerHTML = `<p>
+           Graphic Design - Help to design campaign materials for publicity and marketing...
+            </p>`
+        }else if(check.value === '2'){
+            info.innerHTML = `<p>
+            Logistics - Help to ensure campaign materials are disbursed or placed where they ought to be. Logistics team will be responsible for the general leg work..
+             </p>`
+        }else if(check.value === '4'){
+            info.innerHTML = `<p>
+           Social Media - This team will be responsible for online campaign by designing and executing a workable strategy...
+             </p>`
+        }
     }
-    else if(volunteerInput.value === 'Graphic Design'){
-        info.innerHTML = `<p>
-       ${volunteerInput.value} - Help to design campaign materials for publicity and marketing...
-        </p>`
-    }else if(volunteerInput.value === 'Logistics'){
-        info.innerHTML = `<p>
-        ${volunteerInput.value} - Help to ensure campaign materials are disbursed or placed where they ought to be. Logistics team will be responsible for the general leg work..
-         </p>`
-    }else if(volunteerInput.value === 'Social Media'){
-        info.innerHTML = `<p>
-        ${volunteerInput.value} - This team will be responsible for online campaign by designing and executing a workable strategy...
-         </p>`
-    }
+        })
 })
+
