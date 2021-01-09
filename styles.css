@@ -81,6 +81,16 @@ body{
 .form-container div .input {
     width: 30%;
 } 
+
+.mc-field-group ul {
+    width: 30%;
+    margin: 20px auto;
+    padding: 0;
+}
+.mc-field-group ul li {
+    display: inline;
+    list-style: none;
+}
 nav ul {
     float: right;
 }
@@ -137,6 +147,13 @@ li {
    
    .menu {
        display: none;
+   }
+   #info p {
+       text-align: center;
+       width: 30%;
+       margin: 0 auto;
+       line-height: 1.5;
+       background-color: rgb(0, 0, 0);
    }
    
 @media only screen and (max-width: 600px) {
@@ -206,6 +223,12 @@ li {
     .slide {
        display: block;
     }
+    #info p {
+        text-align: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
       
   }
   
