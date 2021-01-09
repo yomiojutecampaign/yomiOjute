@@ -1,6 +1,6 @@
 const Menu = document.getElementById('menu')
 const info = document.getElementById('info')
-const volunteerInput = document.getElementById('mce-MMERGE5')
+const volunteerInput = document.getElementById('mce-MMERGE8')
 let openSide = false
 
 Menu.addEventListener('click',()=>{
