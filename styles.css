@@ -19,6 +19,8 @@ nav li {
 }
 .image-container {
   flex-wrap: wrap;
+  background-image: url("ld.jpg");
+  background-size: contain;
 }
 .image-container img {
   max-height: 100vh;
@@ -28,6 +30,7 @@ nav li {
   padding-top: 5%;
   padding-left: 3%;
   max-width: 60vw;
+  background-color: #2e5381;
 }
 
 .description h1 {
@@ -203,12 +206,30 @@ ul li ul:hover {
 .location li {
   list-style: none;
 }
+.description img {
+  display: none;
+}
+
+.description a {
+  color: white;
+  text-decoration: none;
+}
+
+.description a:hover {
+  color: #f5a623;
+}
 @media only screen and (max-width: 600px) {
   .description {
     max-width: 95% !important;
     padding-top: 3%;
     padding-bottom: 3%;
     padding-left: 3%;
+    background-color: transparent;
+  }
+
+  .description img {
+    display: block;
+    max-width: 98%;
   }
   .description-main {
     width: 98%;
@@ -228,6 +249,7 @@ ul li ul:hover {
   }
   .image-container {
     display: none;
+    background: none;
   }
   #mc_embed_signup_scroll h1 {
     font-size: 2.3em;
