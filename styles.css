@@ -211,12 +211,12 @@ ul li ul:hover {
 }
 
 .description a {
-  color: white;
-  text-decoration: none;
+  color: #f5a623;
+  text-decoration: underline;
 }
 
 .description a:hover {
-  color: #f5a623;
+  color: white;
 }
 @media only screen and (max-width: 600px) {
   .description {
