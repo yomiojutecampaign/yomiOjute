@@ -206,7 +206,7 @@ ul li ul:hover {
 .location li {
   list-style: none;
 }
-.description img {
+.bg-image {
   display: none;
 }
 
@@ -227,8 +227,8 @@ ul li ul:hover {
     background-color: transparent;
   }
 
-  .description img {
-    display: block;
+  .bg-img {
+    display: block !important;
     max-width: 98%;
   }
   .description-main {
